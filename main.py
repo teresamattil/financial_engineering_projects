@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import datetime as date
 import matplotlib.pyplot as plt
+import scipy as sp
 
 startdate = date.datetime(2020, 1, 1)
 enddate = date.datetime.today()
@@ -63,8 +64,6 @@ last_price = float(ipc.iloc[-1])
 print("\n\n\nlast price", last_price)
 
 # ----- Creando trayectorias
-
-import scipy as sp
 
 np.random.seed(10)
 paths = 7

@@ -1,11 +1,14 @@
-virtual environment
+------------------- virtual environment
+-- Linux? Mac
 Create python3 -m venv etl_env
 Activate source etl_env/bin/activate
 
-source venv/bin/activate
+-- WIndows 
+# 3) Activate it in PowerShell
+& ".\venv_windows\Scripts\Activate.ps1"
 
 
-github
+-------------------  github
 git --version
 git config --global user.email "teresa.mattil@gmail.com”
 Git clone https://github.com/teresamattil/financial_engineering_projects
@@ -13,3 +16,8 @@ Git clone https://github.com/teresamattil/financial_engineering_projects
 git add .
 git commit -m ""
 git push origin main
+
+
+------------ Requirements file
+pip install pipreqs
+pipreqs . --force
